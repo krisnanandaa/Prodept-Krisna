@@ -547,17 +547,19 @@
       }
     }
 
-    function logout() {
-      window.close();
+        function logout() {
+            window.close();
         }
 
-    window.onload = function () {
-        const username = localStorage.getItem('username');
-        if (username) {
-            document.getElementById('username').innerText = username;
-            document.getElementById('personalizedWelcome').innerText = `Welcome back, ${username}`;
-        }
-    };
+        window.onload = function () {
+            const username = localStorage.getItem('username');
+            if (username && username.trim() !== '') {
+                document.getElementById('username').innerText = username;
+                document.getElementById('personalizedWelcome').innerText = `Welcome back, ${username}`;
+            } else {
+                document.getElementById('personalizedWelcome').innerText = `Welcome back!`;
+            }
+        };
 
     function monitorMaintenance() {
       const now = new Date();
