@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <title>
+        i.saku Login
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+        }
+
+        .login-container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .login-container img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .login-container h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .login-container p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .login-container p span {
+            color: red;
+        }
+
+        .login-container p span.username {
+            color: blue;
+        }
+
+        .login-container .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .login-container .input-group i {
+            padding: 10px;
+            background: #ddd;
+            border: 1px solid #ccc;
+            border-right: none;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .login-container .input-group input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 0 5px 5px 0;
+            width: 100%;
+        }
+
+        .login-container .buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-container .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            cursor: pointer;
+        }
+
+        .login-container .buttons button:hover {
+            background-color: #ddd;
+        }
+
+        .logo-section img {
+            height: 80px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="logo-section">
+            <img src="https://krisnanandaa.github.io/my-images/logo-login.jpg" alt="i.Saku Logo">
+        </div>
+        <h2>
+            Selamat Datang
+        </h2>
+        <p>
+            Web Operasional I.Saku
+        </p>
+        <p>
+            Masukan
+            <span class="username">
+                Nama
+            </span>
+        </p>
+        <div class="input-group">
+            <i class="fas fa-user">
+            </i>
+            <input placeholder="Nama" type="text" />
+        </div>
+        <div class="buttons">
+            <button>
+                Login
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
