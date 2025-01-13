@@ -548,8 +548,9 @@
     }
 
         function logout() {
-            window.close();
-        }
+    localStorage.removeItem('username');
+    window.location.href = 'index.html';
+}
 
         window.onload = function () {
             const username = localStorage.getItem('username');
