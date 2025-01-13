@@ -330,8 +330,8 @@
   <div class="main-content">
     <!-- Home Page Content -->
     <div id="homePage" class="welcome-section">
-      <h1>Web Operasional I.Saku</h1>
-      <p>Welcome back, PETRUS KRISNA PRIYA NANDA</p>
+        <h1 id="welcomeMessage">Web Operasional I.Saku</h1>
+        <p id="personalizedWelcome">Welcome back, PETRUS KRISNA PRIYA NANDA</p>
     </div>
 
     <!-- Gateway Dashboard Content -->
@@ -549,13 +549,14 @@
 
     function logout() {
       window.close();
-    }
+        }
 
     window.onload = function () {
-      const username = localStorage.getItem('username');
-      if (username) {
-        document.getElementById('username').innerText = username;
-      }
+        const username = localStorage.getItem('username');
+        if (username) {
+            document.getElementById('username').innerText = username;
+            document.getElementById('personalizedWelcome').innerText = `Welcome back, ${username}`;
+        }
     };
 
     function monitorMaintenance() {
